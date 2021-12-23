@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'bases-angular';
+  x = "freezer!";
+  rpta: number = 0;
+
+  inicioDebate = "Puede efectuar su pregunta";
+
+  recibirResultado(e: any) {
+    this.rpta = e;
+  }
 }

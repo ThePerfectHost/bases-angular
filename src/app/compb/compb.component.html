@@ -1,0 +1,20 @@
+<h1>
+    <i>Inicio del Debate: </i>
+</h1>
+<br>
+{{ inicioDebate }}
+
+<br />
+<input #preg>&nbsp;<button (click)="efectuarPregunta(preg.value)">Efectuar pregunta!</button>
+
+<br />
+<br />
+<br />
+<app-compc [pregunta]="preguntar" (emisor)="recibirRespuesta($event)"></app-compc>
+<br />
+<br />
+<br />
+<p><u>Respuesta:</u> &nbsp; <strong> {{ respuesta }} </strong></p>
+<br />
+<br />
+<br />
